@@ -6,6 +6,7 @@ const path = require('path');
 
 // Use http.createServer instead of https.createServer
 const server = http.createServer(app);
+const port = process.env.PORT || 3000;
 const io = socketio(server);
 
 app.set('view engine', 'ejs');
@@ -24,6 +25,6 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-server.listen(3000, () => {
+server.listen(port, () => {
     console.log('Server is running on port 3000');
 });

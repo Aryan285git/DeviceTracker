@@ -11,7 +11,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A realtime model of device tracker created using socket.io and used by swiggy, zomato, uber for the navigation.",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
